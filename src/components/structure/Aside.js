@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Switch from 'react-switch';
-import { useIntl } from 'react-intl';
-import { ProSidebar, Menu, MenuItem, SubMenu, SidebarHeader, SidebarFooter, SidebarContent } from 'react-pro-sidebar';
+import { ProSidebar, Menu, MenuItem, SidebarHeader, SidebarFooter, SidebarContent } from 'react-pro-sidebar';
 import { RiProjector2Line } from 'react-icons/ri';
-import { AiOutlineHome, AiOutlineSearch, AiOutlineInfoCircle } from 'react-icons/ai';
+import { AiOutlineHome, AiOutlineInfoCircle } from 'react-icons/ai';
 import { BiMessageDetail } from 'react-icons/bi';
 import { MdBusinessCenter } from 'react-icons/md';
 import sidebarBg from '../../assets/sb-background4.jpg';
@@ -13,7 +12,6 @@ import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import '../../styles/Aside.css';
 
 const Aside = ({ image, collapsed, toggled, lang, handleToggleSidebar, handleCollapsedChange, handleLangChange,}) => {
-  const intl = useIntl();
   return (
       <ProSidebar
         image={image ? sidebarBg : false}
@@ -36,17 +34,20 @@ const Aside = ({ image, collapsed, toggled, lang, handleToggleSidebar, handleCol
             }}
           >
             <div className="aside-icon">
-              <img src={headerIcon} />
+              <img src={headerIcon} alt="Nyarp Bygg AB Logo" />
             </div>
           </div>
           <div
               style={{
-                paddingLeft: '24px',
+                position: 'absolute',
+                top: '20px',
+                left: '24px',
                 fontSize: 13,
                 color: "#ffffff",
                 overflow: 'hidden',
                 textOverflow: 'ellipsis',
                 whiteSpace: 'nowrap',
+                marginBottom: '10px'
               }}
             >
                 <Switch
@@ -56,31 +57,6 @@ const Aside = ({ image, collapsed, toggled, lang, handleToggleSidebar, handleCol
                 uncheckedIcon={<BsArrowLeft />}
                 onChange={handleCollapsedChange}
                 checked={collapsed}
-                onColor="#353532"
-                offColor="#353532"
-                onHandleColor= "#ffffff" 
-                offHandleColor= "#ffffff" 
-                />
-            </div>
-            <div            
-                style={{
-                  paddingLeft: '24px',
-                  paddingBottom: '24px',
-                  textTransform: 'uppercase',
-                  fontSize: 10,
-                  color: "#ffffff", 
-                  overflow: 'hidden',
-                  textOverflow: 'ellipsis',
-                  whiteSpace: 'nowrap',
-                }}
-              >
-                <Switch
-                height={16}
-                width={30}
-                checkedIcon={"En"}
-                uncheckedIcon={"Se"}
-                onChange={handleLangChange}
-                checked={lang}
                 onColor="#353532"
                 offColor="#353532"
                 onHandleColor= "#ffffff" 

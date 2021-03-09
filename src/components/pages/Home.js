@@ -8,7 +8,7 @@ const Home = () => {
         <div style={{width: '100%', height: '100%', backgroundImage: `url(${homeback})`, backgroundSize: 'cover'}}>
             <div className="container-welcome">
                 <div className="home-icon">
-                    <img src={headerIcon} />
+                    <img src={headerIcon} alt="Nyarp Bygg AB Logo" />
                 </div>
                 <h1>Ett jönköpingsbaserat byggföretag. </h1>
             </div>

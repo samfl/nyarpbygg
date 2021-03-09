@@ -10,19 +10,22 @@ import Contact from '../pages/Contact';
 const Main = ({toggled, handleToggleSidebar}) => {
   return (
     <main>
-      {toggled ? <div style={{ margin: '0px', padding: '0px'}}></div> : <Header handleToggleSidebar={handleToggleSidebar} /> }
+      <Header handleToggleSidebar={handleToggleSidebar} />
       <Switch>
         <Route exact path="/">
           <Home /> 
         </Route>
         <Route path="/projekt">
-          <Projects /> 
+          <Projects />
+          <Footer />
         </Route>
         <Route path="/om">
           <About />
+          <Footer />
         </Route>
         <Route path="/kontakt">
           <Contact />
+          <Footer />
         </Route>
       </Switch>
     </main>

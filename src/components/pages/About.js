@@ -9,8 +9,8 @@ const About = () => {
             <div className="container-about">
                 <div className="container-about-wrapper">
                     <div className="container-about-inner">
-                    <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '250px', width: '250px', border: '1px solid black', borderRadius: '100%'}}>
-                        <img src={nyarp} />
+                    <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '250px', width: '250px', border: '3px solid #202020', borderRadius: '100%'}}>
+                        <img src={nyarp} alt="Nyarp Bygg AB Logo" />
                     </div>
                         <div style={{height: '250px', width: '250px', marginLeft: '30px'}}>
                             <h2>Nyarp Bygg AB</h2>

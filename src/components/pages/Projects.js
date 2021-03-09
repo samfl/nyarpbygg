@@ -6,8 +6,6 @@ import brygga from '../../assets/brygga.jpg';
 import bastu from '../../assets/bastu.jpg';
 import fonster from '../../assets/fonster.jpg';
 import isolering from '../../assets/isolering.jpg';
-import p2 from '../../assets/sb-background3.jpg';
-import p1 from '../../assets/sb-background3.jpg';
 
 const Projects = () => {
     return (

@@ -19,16 +19,16 @@ const Contact = () => {
                             <h2>+46703974756</h2>
                         </div>
                         <div>
-                            <a href="mailto:rikard.nyarpbygg.se?" target="_blank">
-                                <div className="contact-item">
+                            <a href="mailto:rikard.nyarpbygg.se?" target="_blank" rel="noopener noreferrer">
+                                <div className="contact-item" style={{backgroundSize: '250%'}}>
                                     <MdEmail />
                                 </div>
                             </a>
                             <h2>Rikard@nyarpbygg.se</h2>
                         </div>
                         <div>
-                            <a target="_blank" href="https://www.instagram.com/" rel="noopener noreferrer">
-                                <div className="contact-item">
+                            <a  href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                                <div className="contact-item" style={{backgroundSize: '300%'}}>
                                     <AiFillInstagram />
                                 </div>
                             </a>
