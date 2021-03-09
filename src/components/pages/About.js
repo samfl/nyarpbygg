@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/About.css';
 import rille from '../../assets/rille-profil3.jpg';
-import nyarp from '../../assets/nyarpbygg-icon.png';
+import nyarp from '../../assets/nb_black_darkblue_largetext.png';
 
 const About = () => {
     return (
@@ -9,7 +9,7 @@ const About = () => {
             <div className="container-about">
                 <div className="container-about-wrapper">
                     <div className="container-about-inner">
-                    <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '250px', width: '250px', border: '3px solid #202020', borderRadius: '100%'}}>
+                    <div style={{display: 'flex', paddingTop: '40px', justifyContent: 'center', height: '210px', width: '250px', border: '1px solid #202020', borderRadius: '100%'}}>
                         <img src={nyarp} alt="Nyarp Bygg AB Logo" />
                     </div>
                         <div style={{height: '250px', width: '250px', marginLeft: '30px'}}>

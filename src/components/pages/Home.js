@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/Home.css';
 import homeback from '../../assets/welcome3.jpg';
-import headerIcon from '../../assets/nyarpbygg-icon.png';
+import headerIcon from '../../assets/nb_black_transparent_smalltext.png';
 
 const Home = () => {
     return (

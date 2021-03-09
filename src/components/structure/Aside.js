@@ -7,7 +7,7 @@ import { AiOutlineHome, AiOutlineInfoCircle } from 'react-icons/ai';
 import { BiMessageDetail } from 'react-icons/bi';
 import { MdBusinessCenter } from 'react-icons/md';
 import sidebarBg from '../../assets/sb-background4.jpg';
-import headerIcon from '../../assets/nyarpbygg-icon-white.png';
+import headerIcon from '../../assets/nb_white_transparent_smalltext.png';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import '../../styles/Aside.css';
 
