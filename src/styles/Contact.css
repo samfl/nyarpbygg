@@ -1,0 +1,29 @@
+.container-contact {
+    margin: 20px; 
+    display: flex; 
+    text-align: center; 
+}
+
+.container-contact-inner {
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%; 
+}
+
+.container-contact-wrapper {
+    display: flex;  
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    font-size: 80px; 
+    width: 250px;
+    height: 250px;
+    background-image: url("../assets/sb-background.png");
+    border-radius: 100%; 
+}
