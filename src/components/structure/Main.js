@@ -1,33 +1,41 @@
 import React from 'react';
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
 import Header from './Header';
 import Footer from './Footer';
 import Home from '../pages/Home';
+import Services from '../pages/Services';
 import Projects from '../pages/Projects';
-import About from '../pages/About';
 import Contact from '../pages/Contact';
+import About from '../pages/About';
+import { AnimatePresence } from 'framer-motion';
 
-const Main = ({toggled, handleToggleSidebar}) => {
+const Main = ({handleToggleSidebar}) => {
+
+  const location = useLocation(); 
+
   return (
-    <main>
+    <main style={{position: 'relative', overflowX: 'hidden', alignItems: 'center'}}>
       <Header handleToggleSidebar={handleToggleSidebar} />
-      <Switch>
-        <Route exact path="/">
-          <Home /> 
-        </Route>
-        <Route path="/projekt">
-          <Projects />
-          <Footer />
-        </Route>
-        <Route path="/om">
-          <About />
-          <Footer />
-        </Route>
-        <Route path="/kontakt">
-          <Contact />
-          <Footer />
-        </Route>
-      </Switch>
+      <AnimatePresence style={{position: 'relative', overflowX: 'hidden', display: 'flex', flex: 1, alignItems: 'center', minHeight: '100%', marginBottom: '-50px'}}>
+        <Switch location={location} key={location.pathname}>
+          <Route exact path="/">
+            <Home /> 
+          </Route>
+          <Route path="/tjanster">
+            <Services />
+          </Route>
+          <Route path="/projekt">
+            <Projects />
+          </Route>
+          <Route path="/kontakt">
+            <Contact />
+          </Route>
+          <Route path="/om">
+            <About />
+          </Route>
+        </Switch>
+      </AnimatePresence>
+      <Footer />
     </main>
   );
 };

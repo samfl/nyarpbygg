@@ -1,32 +1,66 @@
 import React from 'react';
-import '../../styles/About.css';
-import rille from '../../assets/rille-profil3.jpg';
 import nyarp from '../../assets/nb_black_darkblue_largetext.png';
+import styled from 'styled-components'
+import { motion } from 'framer-motion';
+import {pageTransition, pageVariants} from '../../assets/transitions';
+
+const Container = styled(motion.div)`
+    position: absolute;
+    min-hegiht: 100%; 
+`
+const Wrapper = styled.div`
+    margin-top: 20px;
+    display: flex; 
+    width: 100%;
+`
+const Outer = styled.div`
+    display: flex; 
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+    width: 100%;
+`
+const ContentWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 600px; 
+    margin-bottom: 20px; 
+`
+const Box = styled.div`
+    display: flex;
+    justify-Content: center;
+    width: 250px;
+`
+const LinkWrapper = styled.div``
+const Item = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px; 
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+`
+const Text = styled.p``
 
 const About = () => {
     return (
-        <div className="container">
-            <div className="container-about">
-                <div className="container-about-wrapper">
-                    <div className="container-about-inner">
-                    <div style={{display: 'flex', paddingTop: '40px', justifyContent: 'center', height: '210px', width: '250px', border: '1px solid #202020', borderRadius: '100%'}}>
-                        <img src={nyarp} alt="Nyarp Bygg AB Logo" />
-                    </div>
-                        <div style={{height: '250px', width: '250px', marginLeft: '30px'}}>
-                            <h2>Nyarp Bygg AB</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor dui dictum efficitur lacinia. Integer volutpat leo sit amet quam tincidunt, mattis tristique nunc elementum. Ut rutrum turpis nulla, quis rutrum felis pretium quis. Nunc tempor, urna ut interdum cursus. </p>
+        <Container initial={"initial"} animate={"in"} exit={"out"} variants={pageVariants} transition={pageTransition}>
+            <Wrapper>
+                <Outer>
+                    <ContentWrapper>
+                        <Box >
+                            <img style={{height: '110px'}} src={nyarp} alt="Nyarp Bygg AB Logo" />
+                        </Box>
+                        <div style={{width: '340px', marginLeft: '30px'}}>
+                            <p>Vi är det lilla företaget som jobbar med alla typer av husrenovering, ombyggnader och trädgårdsplanering. Vi håller hög kvalite och god detaljkänsla i både utförande och materialval. Vi finns i Bankeryd och tar uppdrag i Jönköpingsområdet. Läs mer under <a href="/projekt">Tjänster</a>.</p>
                         </div>
-                    </div>
-                    <div className="container-about-inner">
-                        <div style={{height: '250px', width: '250px', backgroundImage: `url(${rille})`, borderRadius: '100%'}}></div>
-                        <div style={{height: '250px', width: '250px', marginLeft: '30px'}}>
-                            <h2>Rikard Florin</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor dui dictum efficitur lacinia. Integer volutpat leo sit amet quam tincidunt, mattis tristique nunc elementum. Ut rutrum turpis nulla, quis rutrum felis pretium quis. Nunc tempor, urna ut interdum cursus. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                    </ContentWrapper>
+                </Outer>
+            </Wrapper>
+        </Container>
     );
 }
 
