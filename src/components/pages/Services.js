@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { pageTransition, pageVariants } from '../../assets/transitions';
+import { GrServices } from 'react-icons/gr';
+import services from '../../assets/services.jpg';
+import renovating from '../../assets/renovating.jpg';
 
 const Container = styled(motion.div)`
     position: absolute;
@@ -22,15 +25,23 @@ const Inner = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    margin-bottom: 20px; 
 `
 
 const Box = styled.div`
     display: flex; 
     flex-direction: column; 
-    height: 250px;
     width: 320px;
-    margin: 10px; 
+    margin-right: 10px; 
+    margin-left: 10px;
+    margin-bottom: 20px;  
+    margin-top: 20px;  
+`
+
+const Header = styled.p`
+    font-size: 20px;
+    font-weight: bold; 
+    margin: 0px; 
+    padding: 0px;  
 `
 
 const Services = () => {
@@ -39,14 +50,20 @@ const Services = () => {
             <Wrapper>
                 <Outer>
                     <Inner>
-                        <Box>
-                            <h2>Tjänster</h2>
+                        <Box className="b1" style={{borderBottom: '1px solid #383838'}}>
+                            <Header>Tjänster</Header>
                             <p>Vi gör det mesta inom husbygg och hjälper gärna till med allt från rådgivning, planering, genomförande och samordning av andra hantverkare för att hålla tidsplaner och underlätta för dig som privatperson eller företag. </p>
+                        </Box>
+                        <Box className="b2">
+                            <img src={services} alt="services" />
                         </Box>
                     </Inner>
                     <Inner>
-                        <Box>
-                            <h2>Exempel</h2>
+                        <Box className="b3">
+                            <img src={renovating} alt="services" />
+                        </Box>
+                        <Box className="b4" style={{borderBottom: '1px solid #383838'}}>
+                            <Header>Exempel</Header>
                             <ul style={{marginLeft: '-20px'}}>
                                 <li>All typ av renovering och ombyggnation</li>
                                 <li>Kök</li>
@@ -58,6 +75,7 @@ const Services = () => {
                                 <li>Samordning (även mindre projekt kräver ofta samordning och samarbete med duktiga markanläggare, elektriker, plåtslagare, VA och ventilationsfirmor mm.)</li>    
                             </ul>
                         </Box>
+
                     </Inner>
                 </Outer>
             </Wrapper>

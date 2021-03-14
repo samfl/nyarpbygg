@@ -4,6 +4,7 @@ import backgroundImage from '../../assets/sb-background.png';
 import styled from 'styled-components'
 import { motion } from 'framer-motion';
 import { pageTransition, pageVariants } from '../../assets/transitions';
+import nyarp from '../../assets/nb_black_transp_largetext.png';
 
 
 const Container = styled(motion.div)`
@@ -17,12 +18,13 @@ const Wrapper = styled.div`
 const Outer = styled.div`
 
 `
-const ContentWrapper = styled.div`
+const Inner = styled.div`
     width: 100%;
     display: flex; 
     flex-direction: row;  
     flex-wrap: wrap;
-    justify-content: space-around; 
+    justify-content: center; 
+    margin-bottom: 20px; 
 `
 const Box = styled.div`
     display: flex;     
@@ -31,44 +33,33 @@ const Box = styled.div`
     align-items: center; 
     width: 220px;
 `
-const LinkWrapper = styled.div``
-const Item = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 40px; 
-    width: 150px;
-    height: 150px;
-    background-image: url(${backgroundImage});
-    border-radius: 100%;
-`
-const Text = styled.p`
-`
+const LinkWrapper = styled.a``
+const Text = styled.p``
 
 const Contact = () => {
     return (
         <Container initial={"initial"} animate={"in"} exit={"out"} variants={pageVariants} transition={pageTransition}>
             <Wrapper>
                 <Outer>
-                    <ContentWrapper>
+                    <Inner>
+                        <Box>
+                            <img style={{height: '100px'}} src={nyarp} alt="Nyarp Bygg AB Logo" />
+                        </Box>
+                    </Inner>
+                    <Inner>
                         <Box>
                             <LinkWrapper href="tel:+46769460315">
-                                <Item>
-                                    <MdCall />
-                                </Item>
+                                <MdCall size="30px" className="contact-icon"/>
                             </LinkWrapper>
                             <Text>+46703974756</Text>
                         </Box>
                         <Box>
                             <LinkWrapper href="mailto:rikard.nyarpbygg.se?" target="_blank" rel="noopener noreferrer">
-                                <Item>
-                                    <MdEmail />
-                                </Item>
+                                <MdEmail size="30px" className="contact-icon"/>
                             </LinkWrapper>
                             <Text>Rikard@nyarpbygg.se</Text>
                         </Box>
-                    </ContentWrapper>
+                    </Inner>
                 </Outer>
             </Wrapper>
         </Container>

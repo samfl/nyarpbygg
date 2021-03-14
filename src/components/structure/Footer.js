@@ -6,7 +6,6 @@ const Container = styled.footer`
     bottom: 0;
     padding: 1rem; 
     height: 2.5rem;
-    z-index: 1000;  
 `
 
 const Footer = () => {

@@ -196,3 +196,144 @@ body {
 .container {
   margin-bottom: 10px; 
 }
+
+@media only screen and (max-width: 700px) {
+  .b1 {
+    order: 2;
+  }
+  .b2 {
+    order: 1;
+  }
+  .b3 {
+    order: 3;
+  }
+  .b4 {
+    order: 4;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .p1 {
+    order: 1; 
+  }
+  .p2 {
+    order: 2; 
+  }
+  .p3 {
+    order: 3; 
+  }
+  .p4 {
+    order: 4; 
+  }
+  .p5 {
+    order: 5; 
+  }
+  .p6 {
+    order: 6; 
+  }
+  .p7 {
+    order: 7; 
+  }
+  .p8 {
+    order: 8; 
+  }
+  .p9 {
+    order: 9; 
+  }
+  .p10 {
+    order: 10; 
+  }
+  .p11 {
+    order: 11; 
+  }
+  .p12 {
+    order: 12; 
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .p1 {
+    order: 1; 
+  }
+  .p2 {
+    order: 2; 
+  }
+  .p3 {
+    order: 4; 
+  }
+  .p4 {
+    order: 3; 
+  }
+  .p5 {
+    order: 5; 
+  }
+  .p6 {
+    order: 6; 
+  }
+  .p7 {
+    order: 8; 
+  }
+  .p8 {
+    order: 7; 
+  }
+  .p9 {
+    order: 9; 
+  }
+  .p10 {
+    order: 10; 
+  }
+  .p11 {
+    order: 12; 
+  }
+  .p12 {
+    order: 11; 
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .p1 {
+    order: 1; 
+  }
+  .p2 {
+    order: 2; 
+  }
+  .p3 {
+    order: 3; 
+  }
+  .p4 {
+    order: 4; 
+  }
+  .p5 {
+    order: 6; 
+  }
+  .p6 {
+    order: 5; 
+  }
+  .p7 {
+    order: 8; 
+  }
+  .p8 {
+    order: 7; 
+  }
+  .p9 {
+    order: 9; 
+  }
+  .p10 {
+    order: 10; 
+  }
+  .p11 {
+    order: 11; 
+  }
+  .p12 {
+    order: 12; 
+  }
+}
+
+.contact-icon:hover {
+  color: #ffd53f; 
+  background-color: #383838;
+}
+
+.contact-icon {
+  color: #383838; 
+}
