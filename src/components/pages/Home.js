@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import homeback from '../../assets/welcome3.jpg';
 import mainback from '../../assets/main_background.jpg';
-import headerIcon from '../../assets/nb_black_transp_largetext.png';
+import headerIcon from '../../assets/funkis.png';
 import styled from 'styled-components'
 import { motion } from 'framer-motion';
 import { pageTransition, pageVariants } from '../../assets/transitions';
@@ -23,7 +23,6 @@ const Wrapper = styled.div`
         align-items: center; 
         width: 100%; 
     }
-
 `
 const HomeText = styled.div`
     display: table;
@@ -37,7 +36,7 @@ const IconWrapper = styled.div`
       width: 270px; 
       margin-top: 20px; 
       display: flex;
-      flex-direction: column; 
+      flex-direction: column;   
       @media (max-width: 768px) {
         align-items: center; 
     }
@@ -53,7 +52,7 @@ const Home = () => {
         <Container initial={"initial"} animate={"in"} exit={"out"} variants={pageVariants} transition={pageTransition}>
             <Wrapper>
                 <IconWrapper>
-                    <img style={{width: '270px'}} src={headerIcon} alt="Nyarp Bygg AB Logo" />
+                    <img style={{width: '180px'}} src={headerIcon} alt="Nyarp Bygg AB Logo" />
                 </IconWrapper>
                 <Box>
                     <HomeText>Ett byggföretag i Bankeryd.</HomeText>

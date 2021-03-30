@@ -9,7 +9,8 @@ import { BiMessageDetail } from 'react-icons/bi';
 import { MdBusinessCenter } from 'react-icons/md';
 import { FiMapPin } from 'react-icons/fi';
 import sidebarBg from '../../assets/sb-background4.jpg';
-import headerIcon from '../../assets/nb_white_transparent_smalltext.png';
+import light from '../../assets/lightwood.jpg';
+import headerIcon from '../../assets/funkis.png';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 
 const Aside = ({ image, collapsed, toggled, lang, handleToggleSidebar, handleCollapsedChange, handleLangChange,}) => {
@@ -24,7 +25,7 @@ const Aside = ({ image, collapsed, toggled, lang, handleToggleSidebar, handleCol
         <SidebarHeader>
           <div
             style={{
-              padding: '24px',
+              padding: '10px',
               textTransform: 'uppercase',
               fontWeight: 'bold',
               fontSize: 14,
@@ -36,7 +37,7 @@ const Aside = ({ image, collapsed, toggled, lang, handleToggleSidebar, handleCol
           >
             <div className="aside-icon">
               <Link to="/">
-                <img style={{ width: '140px' }}src={headerIcon} alt="Nyarp Bygg AB Logo" />
+                <img style={{ width: '100px' }}src={headerIcon} alt="Nyarp Bygg AB Logo" />
               </Link>
             </div>
           </div>
@@ -70,6 +71,9 @@ const Aside = ({ image, collapsed, toggled, lang, handleToggleSidebar, handleCol
 
         <SidebarContent>
           <Menu iconShape="circle">
+            <MenuItem icon={<AiOutlineInfoCircle />} onClick={() => handleToggleSidebar(false)} > 
+              <Link to="/om">Om oss</Link>
+            </MenuItem>
             <MenuItem icon={<RiBuilding2Line />} onClick={() => handleToggleSidebar(false)} > 
               <Link to="/tjanster">Tjänster</Link>
             </MenuItem>
@@ -78,9 +82,6 @@ const Aside = ({ image, collapsed, toggled, lang, handleToggleSidebar, handleCol
             </MenuItem>
             <MenuItem  icon={<TiContacts />} onClick={() => handleToggleSidebar(false)} >
               <Link to="/kontakt">Kontakt</Link>
-            </MenuItem>
-            <MenuItem icon={<AiOutlineInfoCircle />} onClick={() => handleToggleSidebar(false)} > 
-              <Link to="/om">Om oss</Link>
             </MenuItem>
           </Menu>
         </SidebarContent>

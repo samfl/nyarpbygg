@@ -8,16 +8,26 @@ import renovating from '../../assets/renovating.jpg';
 
 const Container = styled(motion.div)`
     position: absolute;
+    height: 100%;
 `
 const Wrapper = styled.div`
     margin-top: 20px; 
     display: flex;
     width: 100%; 
+    height: 100%;
 `
 const Outer = styled.div`
     display: flex;  
-    justify-content: space-between;
+    flex-direction: column; 
+    justify-content: center;
     flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+        display: flex; 
+        flex-direction: row; 
+        align-items: center; 
+        width: 100%; 
+    }
 `
 const Inner = styled.div`
     display: flex; 
@@ -50,7 +60,7 @@ const Services = () => {
             <Wrapper>
                 <Outer>
                     <Inner>
-                        <Box className="b1" style={{borderBottom: '1px solid #383838'}}>
+                        <Box className="b1" >
                             <Header>Tjänster</Header>
                             <p>Vi gör det mesta inom husbygg och hjälper gärna till med allt från rådgivning, planering, genomförande och samordning av andra hantverkare för att hålla tidsplaner och underlätta för dig som privatperson eller företag. </p>
                         </Box>
@@ -62,7 +72,7 @@ const Services = () => {
                         <Box className="b3">
                             <img src={renovating} alt="services" />
                         </Box>
-                        <Box className="b4" style={{borderBottom: '1px solid #383838'}}>
+                        <Box className="b4" >
                             <Header>Exempel</Header>
                             <ul style={{marginLeft: '-20px'}}>
                                 <li>All typ av renovering och ombyggnation</li>
@@ -75,7 +85,6 @@ const Services = () => {
                                 <li>Samordning (även mindre projekt kräver ofta samordning och samarbete med duktiga markanläggare, elektriker, plåtslagare, VA och ventilationsfirmor mm.)</li>    
                             </ul>
                         </Box>
-
                     </Inner>
                 </Outer>
             </Wrapper>
