@@ -30,7 +30,7 @@ const Inner = styled.div`
     flex-wrap: wrap;
     justify-content: center; 
     align-items: center; 
-    margin-bottom: 20px; 
+    margin-bottom: 40px; 
 `
 const Box = styled.div`
     display: flex;     

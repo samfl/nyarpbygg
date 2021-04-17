@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-$sidebar-bg-color: #978375;
+$sidebar-bg-color: #43382ac6;
 $submenu-bg-color: rgba(255, 255, 255, 0.05);
 $submenu-bg-color-collapsed: rgba(29, 29, 29, 0.95);
 $sidebar-color: black;
@@ -342,4 +342,14 @@ body {
   display: flex; 
   flex-direction: row; 
   justify-content: center;
+  text-decoration: none;
+  color: #1c1a1a;
+}
+
+.aside-icon:hover{
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center;
+  text-decoration: none;
+  color: $highlight-color;
 }

@@ -64,16 +64,9 @@ const Services = () => {
                             <Header>Tjänster</Header>
                             <p>Vi gör det mesta inom husbygg och hjälper gärna till med allt från rådgivning, planering, genomförande och samordning av andra hantverkare för att hålla tidsplaner och underlätta för dig som privatperson eller företag. </p>
                         </Box>
-                        <Box className="b2">
-                            <img src={services} alt="services" />
-                        </Box>
                     </Inner>
                     <Inner>
-                        <Box className="b3">
-                            <img src={renovating} alt="services" />
-                        </Box>
                         <Box className="b4" >
-                            <Header>Exempel</Header>
                             <ul style={{marginLeft: '-20px'}}>
                                 <li>All typ av renovering och ombyggnation</li>
                                 <li>Kök</li>

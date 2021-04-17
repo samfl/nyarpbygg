@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import homeback from '../../assets/welcome3.jpg';
-import mainback from '../../assets/main_background.jpg';
+import mainback from '../../assets/Brygga_ny.jpg';
 import headerIcon from '../../assets/funkis.png';
 import styled from 'styled-components'
 import { motion } from 'framer-motion';
@@ -44,6 +44,10 @@ const IconWrapper = styled.div`
 
 const Box = styled.div`
 @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;  
+    align-items: center; 
+    text-align: center;
 }
 `
 
@@ -51,9 +55,6 @@ const Home = () => {
     return (
         <Container initial={"initial"} animate={"in"} exit={"out"} variants={pageVariants} transition={pageTransition}>
             <Wrapper>
-                <IconWrapper>
-                    <img style={{width: '180px'}} src={headerIcon} alt="Nyarp Bygg AB Logo" />
-                </IconWrapper>
                 <Box>
                     <HomeText>Ett byggföretag i Bankeryd.</HomeText>
                     <HomeText>Husrenovering, ombyggnader & trädgårdsplanering.</HomeText>

@@ -41,13 +41,15 @@ const Box = styled.div`
     flex-direction: column; 
     justify-content: center; 
     width: 320px;
-    margin-right: 10px; 
-    margin-left: 10px;
-    margin-bottom: 20px;  
-    margin-top: 20px;  
 `
 
 const Text = styled.p`
+margin: 0; 
+padding: 0; 
+`
+
+const FatText = styled.p`
+    font-weight: bold; 
 `
 
 const About = () => {
@@ -57,16 +59,19 @@ const About = () => {
                 <Outer>
                     <Inner>
                         <Box >
-                            <HiQuestionMarkCircle size="40px"/>
-                            <Text>Vi är det lilla företaget som jobbar med alla typer av husrenovering, ombyggnader och trädgårdsplanering. </Text>
-                        </Box>
-                        <Box >
-                            <HiCheckCircle size="40px"/>
-                            <Text>Vi håller hög kvalite och god detaljkänsla i både utförande och materialval.</Text>
-                        </Box>
-                        <Box >
-                            <HiInformationCircle size="40px"/>
-                            <Text>Vi finns i Bankeryd och tar uppdrag i Jönköpingsområdet. Läs mer under <Link to="/projekt">Tjänster</Link>.</Text>
+                            <FatText>Om oss</FatText>
+                            <Text>Vi är det lilla företaget som jobbar med husrenovering, om-/tillbyggnader, trädgårdsplanering och solskydd. </Text>
+                            <br />
+                            <Text>Med utgångspunkt i hög kvalite och god detaljkänsla i både utförande och materialval ska vi leverera enligt  överenskomna tidplaner. </Text>
+                            <br />
+                            <Text>Läs mer under <Link to="/tjanster">Tjänster</Link>.</Text>
+                            <FatText>ROT-avdrag</FatText>
+                            <Text>Utnyttja ROT-avdraget och sänk arbetskostnaden vid renoveringar eller tillbyggnader i villan!</Text>
+                            <br />
+                            <br />
+                            <Text>Varmt välkomna att diskutera och bolla dina hus och trädgårdstankar, både små och större projekt med oss.</Text>
+                            <br />
+                            <Text>Vi finns i Bankeryd och tar uppdrag i Jönköpingsområdet.</Text>
                         </Box>
                     </Inner>    
                 </Outer>

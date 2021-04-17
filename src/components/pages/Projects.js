@@ -6,6 +6,13 @@ import brygga from '../../assets/brygga.jpg';
 import bastu from '../../assets/bastu.jpg';
 import fonster from '../../assets/fonster.jpg';
 import isolering from '../../assets/isolering.jpg';
+import altan from '../../assets/altan.jpg';
+
+import badrum_ny from '../../assets/badrum_ny.jpg';
+import brygga_ny from '../../assets/Brygga_ny.jpg';
+import toalett_ny from '../../assets/toalett_ny.jpg';
+import kök_ny from '../../assets/Kök_ny.jpg';
+
 import styled from 'styled-components'
 import { motion } from 'framer-motion';
 import { pageTransition, pageVariants } from '../../assets/transitions';
@@ -28,6 +35,7 @@ const Outer = styled.div`
     justify-content: space-evenly;
     flex-wrap: wrap;
     height: 100%; 
+    max-width: 1000px; 
 `
 
 const Inner = styled.div`
@@ -37,13 +45,15 @@ const Inner = styled.div`
     flex-wrap: wrap;
     max-width: 600; 
     margin-bottom: 10px; 
+    @media (max-width: 768px) {
+        text-align: center; 
+    }
 `
 
 const Box = styled.div`
     display: flex; 
     flex-direction: column; 
-    justify-content: center; 
-    width: 300px;
+    width: 400px;
     margin-right: 10px; 
     margin-left: 10px;
     margin-bottom: 20px;  
@@ -68,56 +78,27 @@ const Projects = () => {
                 <Outer>
                     <Inner>
                         <Box className="p1">
-                            <Image src={plank} alt="terass" />
+                            <img src={badrum_ny} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
                         </Box>
-                        <Box className="p2"  >
-                            <Header>Terass & Altan</Header>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor dui dictum efficitur lacinia. Integer volutpat leo sit amet quam tincidunt, mattis tristique nunc elementum. Ut rutrum turpis nulla. </p>
+                    </Inner>
+                    <Inner>
+                        <Box className="p2">
+                            <img src={toalett_ny} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
                         </Box>
                     </Inner>
                     <Inner>
                         <Box className="p3">
-                            <Image src={badrum} alt="badrum" />
+                            <img src={kök_ny} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}}/>
                         </Box>
-                        <Box className="p4"  >
-                            <Header>Badrum</Header>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor dui dictum efficitur lacinia. Integer volutpat leo sit amet quam tincidunt, mattis tristique nunc elementum. Ut rutrum turpis nulla. </p>
+                    </Inner>
+                    <Inner>
+                        <Box className="p4">
+                            <img src={brygga_ny} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
                         </Box>
                     </Inner>
                     <Inner>
                         <Box className="p5">
-                            <Image src={brygga} alt="brygga" />
-                        </Box>
-                        <Box className="p6"  >
-                            <Header>Brygga</Header>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor dui dictum efficitur lacinia. Integer volutpat leo sit amet quam tincidunt, mattis tristique nunc elementum. Ut rutrum turpis nulla. </p>
-                        </Box>
-                    </Inner>
-                    <Inner>
-                        <Box className="p7">
-                            <Image src={bastu} alt="bastu" />
-                        </Box>
-                        <Box className="p8"  >
-                            <Header>Bastu</Header>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor dui dictum efficitur lacinia. Integer volutpat leo sit amet quam tincidunt, mattis tristique nunc elementum. Ut rutrum turpis nulla. </p>
-                        </Box>
-                    </Inner>
-                    <Inner>
-                        <Box className="p9">
-                            <Image src={fonster} alt="fonster" />
-                        </Box>
-                        <Box className="p10"  >
-                            <Header>Fönster</Header>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor dui dictum efficitur lacinia. Integer volutpat leo sit amet quam tincidunt, mattis tristique nunc elementum. Ut rutrum turpis nulla. </p>
-                        </Box>
-                    </Inner>
-                    <Inner>
-                        <Box className="p11">
-                            <Image src={isolering} alt="isolering" />
-                        </Box>
-                        <Box className="p12"  >
-                            <Header>Isolering</Header>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor dui dictum efficitur lacinia. Integer volutpat leo sit amet quam tincidunt, mattis tristique nunc elementum. Ut rutrum turpis nulla. </p>
+                            <img src={altan} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
                         </Box>
                     </Inner>
                 </Outer>

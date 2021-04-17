@@ -25,26 +25,27 @@ const Aside = ({ image, collapsed, toggled, lang, handleToggleSidebar, handleCol
         <SidebarHeader>
           <div
             style={{
-              padding: '10px',
+              padding: '20px',
               textTransform: 'uppercase',
               fontWeight: 'bold',
-              fontSize: 14,
+              fontSize: 18,
               letterSpacing: '1px',
               overflow: 'hidden',
               textOverflow: 'ellipsis',
               whiteSpace: 'nowrap',
             }}
           >
-            <div className="aside-icon">
-              <Link to="/">
-                <img style={{ width: '100px' }}src={headerIcon} alt="Nyarp Bygg AB Logo" />
-              </Link>
-            </div>
+
+              <div className="aside-icon">
+                <Link to="/" className="aside-icon" >
+                  NYARP BYGG AB
+                </Link>
+              </div>
           </div>
           <div
               style={{
                 position: 'absolute',
-                top: '20px',
+                top: '43px',
                 left: '24px',
                 fontSize: 13,
                 color: "#ffffff",
@@ -78,7 +79,7 @@ const Aside = ({ image, collapsed, toggled, lang, handleToggleSidebar, handleCol
               <Link to="/tjanster">Tjänster</Link>
             </MenuItem>
             <MenuItem icon={<RiProjector2Line />} onClick={() => handleToggleSidebar(false)} > 
-              <Link to="/projekt">Projekt</Link>
+              <Link to="/projekt">Genomförda <br /> uppdrag</Link>
             </MenuItem>
             <MenuItem  icon={<TiContacts />} onClick={() => handleToggleSidebar(false)} >
               <Link to="/kontakt">Kontakt</Link>
