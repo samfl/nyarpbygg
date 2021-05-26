@@ -62,7 +62,7 @@ const About = () => {
                             <FatText>Om oss</FatText>
                             <Text>Vi är det lilla företaget som jobbar med husrenovering, om-/tillbyggnader, trädgårdsplanering och solskydd. </Text>
                             <br />
-                            <Text>Med utgångspunkt i hög kvalite och god detaljkänsla i både utförande och materialval ska vi leverera enligt  överenskomna tidplaner. </Text>
+                            <Text>Med utgångspunkt i hög kvalité och god detaljkänsla i både utförande och materialval levererar vi enligt överenskomna tidplaner. </Text>
                             <br />
                             <Text>Läs mer under <Link to="/tjanster">Tjänster</Link>.</Text>
                             <FatText>ROT-avdrag</FatText>
