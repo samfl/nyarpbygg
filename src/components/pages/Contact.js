@@ -55,7 +55,7 @@ const Contact = () => {
                             <Text>+46703974756</Text>
                         </Box>
                         <Box>
-                            <LinkWrapper href="mailto:rikard.nyarpbygg.se?" target="_blank" rel="noopener noreferrer">
+                            <LinkWrapper href="mailto:rikard@nyarpbygg.se?" target="_blank" rel="noopener noreferrer">
                                 <HiMailOpen size="40px" className="contact-icon"/>
                             </LinkWrapper>
                             <Text>rikard@nyarpbygg.se</Text>
