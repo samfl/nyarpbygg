@@ -330,11 +330,14 @@ body {
 }
 
 .contact-icon:hover {
-  color: #7bdcf5; 
+  color: white; 
   background-color: #383838;
+  border-radius: 30px; 
+  padding: 5px; 
 }
 
 .contact-icon {
+  padding: 5px; 
   color: #383838; 
 }
 
@@ -352,4 +355,16 @@ body {
   justify-content: center;
   text-decoration: none;
   color: $highlight-color;
+}
+
+
+.aboutServiceLink {
+  color: #1c1a1a; 
+}
+
+.aboutServiceLink:hover {
+  color: #1c1a1a; 
+  border-top: 1px solid #383838;
+  border-bottom: 1px solid #383838;
+  text-decoration: none;
 }

@@ -7,6 +7,9 @@ import bastu from '../../assets/bastu.jpg';
 import fonster from '../../assets/fonster.jpg';
 import isolering from '../../assets/isolering.jpg';
 import altan from '../../assets/altan.jpg';
+import uppdrag6 from '../../assets/uppdrag6.jpg';
+import uppdrag7 from '../../assets/uppdrag7.jpg';
+import uppdrag8 from '../../assets/uppdrag8.jpg';
 
 import badrum_ny from '../../assets/badrum_ny.jpg';
 import brygga_ny from '../../assets/Brygga_ny.jpg';
@@ -78,12 +81,12 @@ const Projects = () => {
                 <Outer>
                     <Inner>
                         <Box className="p1">
-                            <img src={badrum_ny} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
+                            <img src={toalett_ny} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
                         </Box>
                     </Inner>
                     <Inner>
                         <Box className="p2">
-                            <img src={toalett_ny} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
+                            <img src={badrum_ny} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
                         </Box>
                     </Inner>
                     <Inner>
@@ -93,12 +96,27 @@ const Projects = () => {
                     </Inner>
                     <Inner>
                         <Box className="p4">
-                            <img src={brygga_ny} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
+                            <img src={altan} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
                         </Box>
                     </Inner>
                     <Inner>
                         <Box className="p5">
-                            <img src={altan} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
+                            <img src={brygga_ny} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
+                        </Box>
+                    </Inner>
+                    <Inner>
+                        <Box className="p6">
+                            <img src={uppdrag6} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
+                        </Box>
+                    </Inner>
+                    <Inner>
+                        <Box className="p7">
+                            <img src={uppdrag8} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
+                        </Box>
+                    </Inner>
+                    <Inner>
+                        <Box className="p8">
+                            <img src={uppdrag7} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
                         </Box>
                     </Inner>
                 </Outer>

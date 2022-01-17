@@ -26,7 +26,7 @@ function Layout({ setLocale }) {
   };
 
   return (
-    <div style={{height: '100%'}} className={`app ${toggled ? 'toggled' : ''}`}>
+    <div style={{height: '100%'}} className={`app ${toggled ? '' : 'toggled'}`}>
       <Router>
           <Aside
             image={image}

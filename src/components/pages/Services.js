@@ -43,8 +43,8 @@ const Box = styled.div`
     width: 320px;
     margin-right: 10px; 
     margin-left: 10px;
-    margin-bottom: 20px;  
-    margin-top: 20px;  
+    margin-bottom: 0px;  
+    margin-top: 0px;  
 `
 
 const Header = styled.p`
@@ -62,20 +62,20 @@ const Services = () => {
                     <Inner>
                         <Box className="b1" >
                             <Header>Tjänster</Header>
-                            <p>Vi gör det mesta inom husbygg och hjälper gärna till med allt från rådgivning, planering, genomförande och samordning av andra hantverkare för att hålla tidsplaner och underlätta för dig som privatperson eller företag. </p>
+                            <p>Vi gör det mesta inom husbyggnation, renovering och hjälper gärna till med rådgivning, planering, naturligtvis själva genomförandet, byggandet och samordning av andra hantverkare för att hålla tidsplaner och underlätta för dig som privatperson eller företag. </p>
                         </Box>
                     </Inner>
                     <Inner>
                         <Box className="b4" >
+                            <p>Vi har en bred kompetens i företaget inom framförallt nedan, men också inom närliggande områden genom samarbetspartners som andra byggare, VA-, ventilationsföretag, elektriker och andra företag.</p>
                             <ul style={{marginLeft: '-20px'}}>
-                                <li>All typ av renovering och ombyggnation</li>
+                                <li>All typ av nybyggnation, om- och tillbyggnad samt renovering av bostäder och kontor</li>
                                 <li>Kök</li>
-                                <li>Badrum</li>
-                                <li>Trädgårdsanläggning och hjälp med planering, ljussättning mm.</li>
-                                <li>Altan / Trädäck</li>
-                                <li>Solskydd</li>
-                                <li>Trädfällning / Stubbfräsning</li>
-                                <li>Samordning (även mindre projekt kräver ofta samordning och samarbete med duktiga markanläggare, elektriker, plåtslagare, VA och ventilationsfirmor mm.)</li>    
+                                <li>Badrum, bastu/spa</li>
+                                <li>Trädgårdsanläggning och hjälp med planering, belysning, stensättning, m.m.</li>
+                                <li>Uteplatser, trädäck, pool/spa m.m.</li>
+                                <li>Solskydd, alla former av markiser, segel m.m.</li>
+                                <li>Samordning, även mindre projekt kräver ofta samordning och samarbete med duktiga markanläggare, elektriker, plåtslagare, VA och ventilationsfirmor, kakelsättare med våtrumsbehörighet m.m.</li>    
                             </ul>
                         </Box>
                     </Inner>
