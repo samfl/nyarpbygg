@@ -8,9 +8,9 @@
     "@testing-library/user-event": "^12.8.1",
     "framer-motion": "^3.10.3",
     "nuka-carousel": "^4.7.5",
-    "react": "^17.0.1",
+    "react": "^17.0.2",
     "react-adaptive-image": "^1.8.0",
-    "react-dom": "^17.0.1",
+    "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
     "react-intl": "^5.13.2",
     "react-pro-sidebar": "^0.6.0",
@@ -18,7 +18,6 @@
     "react-router-animation": "^1.0.10",
     "react-router-dom": "^5.2.0",
     "react-router-transition": "^2.1.0",
-    "react-scripts": "4.0.3",
     "react-switch": "^6.0.0",
     "react-transition-group": "^4.4.1",
     "sass": "^1.32.8",
@@ -48,5 +47,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "ajv": "^8.12.0",
+    "bufferutil": "^4.0.7",
+    "enzyme": "^3.11.0",
+    "glob-parent": "^6.0.2",
+    "node-fetch": "^2.6.12",
+    "nth-check": "^2.0.1",
+    "react-scripts": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "type-fest": "^4.1.0",
+    "typescript": "^5.1.6",
+    "utf-8-validate": "^6.0.3",
+    "webpack-hot-middleware": "^2.25.4",
+    "webpack-plugin-serve": "^1.6.0"
   }
 }

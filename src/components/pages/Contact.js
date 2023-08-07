@@ -49,7 +49,7 @@ const Contact = () => {
                 <Outer>
                     <Inner>
                         <Box>
-                            <LinkWrapper href="tel:+46769460315">
+                            <LinkWrapper href="tel:+46703974756">
                                 <HiPhone size="40px" className="contact-icon"/>
                             </LinkWrapper>
                             <Text>+46703974756</Text>
