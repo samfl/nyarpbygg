@@ -33,6 +33,7 @@ const Aside = ({ image, collapsed, toggled, lang, handleToggleSidebar, handleCol
               overflow: 'hidden',
               textOverflow: 'ellipsis',
               whiteSpace: 'nowrap',
+              color: 'white',
             }}
           >
             {

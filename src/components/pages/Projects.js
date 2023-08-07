@@ -16,6 +16,10 @@ import brygga_ny from '../../assets/Brygga_ny.jpg';
 import toalett_ny from '../../assets/toalett_ny.jpg';
 import kök_ny from '../../assets/Kök_ny.jpg';
 
+import ny_terass1 from '../../assets/ny_terass_enkel.jpg';
+import ny_terass2 from '../../assets/ny_terass_skydd.jpg';
+import ny_bastu from '../../assets/ny_bastu.jpg';
+
 import styled from 'styled-components'
 import { motion } from 'framer-motion';
 import { pageTransition, pageVariants } from '../../assets/transitions';
@@ -81,22 +85,37 @@ const Projects = () => {
                 <Outer>
                     <Inner>
                         <Box className="p1">
+                            <img src={ny_terass1} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
+                        </Box>
+                    </Inner>
+                    <Inner>
+                        <Box className="p1">
+                            <img src={ny_terass2} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
+                        </Box>
+                    </Inner>
+                    <Inner>
+                        <Box className="p1">
+                            <img src={ny_bastu} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
+                        </Box>
+                    </Inner>
+                    <Inner>
+                        <Box className="p1">
                             <img src={toalett_ny} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
                         </Box>
                     </Inner>
                     <Inner>
                         <Box className="p2">
-                            <img src={badrum_ny} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
+                            <img src={altan} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
                         </Box>
                     </Inner>
                     <Inner>
                         <Box className="p3">
-                            <img src={kök_ny} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}}/>
+                            <img src={badrum_ny} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}}/>
                         </Box>
                     </Inner>
                     <Inner>
                         <Box className="p4">
-                            <img src={altan} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
+                            <img src={uppdrag6} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
                         </Box>
                     </Inner>
                     <Inner>
@@ -106,7 +125,7 @@ const Projects = () => {
                     </Inner>
                     <Inner>
                         <Box className="p6">
-                            <img src={uppdrag6} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
+                            <img src={uppdrag7} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
                         </Box>
                     </Inner>
                     <Inner>
@@ -116,7 +135,7 @@ const Projects = () => {
                     </Inner>
                     <Inner>
                         <Box className="p8">
-                            <img src={uppdrag7} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
+                            <img src={kök_ny} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
                         </Box>
                     </Inner>
                 </Outer>

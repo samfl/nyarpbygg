@@ -70,6 +70,7 @@ const HomeText = styled.div`
     color: black;
     padding: 5px;
     margin: 5px;
+    font-weight: bold; 
 `
 
 const HomeFatText = styled.div`
@@ -95,6 +96,7 @@ const Box = styled.div`
     width: 700px;
     @media (max-width: 1024px) {
         width: 600px;
+        background-color: rgba(255,255,255,0.6);
     }
     @media (max-width: 768px) {
         display: flex;
@@ -102,6 +104,7 @@ const Box = styled.div`
         align-items: center; 
         text-align: center;
         width: 400px;
+        background-color: rgba(255,255,255,0.6);
     }
     @media (max-width: 768px) {
         display: flex;
@@ -109,6 +112,7 @@ const Box = styled.div`
         align-items: center; 
         text-align: center;
         width: 300px;
+        background-color: rgba(255,255,255,0.6);
     }
 `
 
