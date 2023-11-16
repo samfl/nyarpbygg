@@ -20,6 +20,11 @@ import ny_terass1 from '../../assets/ny_terass_enkel.jpg';
 import ny_terass2 from '../../assets/ny_terass_skydd.jpg';
 import ny_bastu from '../../assets/ny_bastu.jpg';
 
+import ny_badrum1 from '../../assets/ny_badrum_badkar.jpg';
+import ny_badrum2 from '../../assets/ny_badrum_dusch.jpg';
+import ny_badrum3 from '../../assets/ny_badrum_handfat.jpg';
+import ny_uterum from '../../assets/ny_uterum.jpg';
+
 import styled from 'styled-components'
 import { motion } from 'framer-motion';
 import { pageTransition, pageVariants } from '../../assets/transitions';
@@ -85,12 +90,42 @@ const Projects = () => {
                 <Outer>
                     <Inner>
                         <Box className="p1">
+                            <img src={ny_badrum1} alt="nytt_badrum1" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
+                        </Box>
+                    </Inner>
+                    <Inner>
+                        <Box className="p1">
+                            <img src={ny_badrum2} alt="nytt_badrum2" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
+                        </Box>
+                    </Inner>
+                    <Inner>
+                        <Box className="p1">
+                            <img src={ny_badrum3} alt="nytt_badrum3" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
+                        </Box>
+                    </Inner>
+                    <Inner>
+                        <Box className="p1">
+                            <img src={uppdrag8} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
+                        </Box>
+                    </Inner>
+                    <Inner>
+                        <Box className="p1">
+                            <img src={ny_uterum} alt="uterum" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
+                        </Box>
+                    </Inner>
+                    <Inner>
+                        <Box className="p1">
                             <img src={ny_terass1} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
                         </Box>
                     </Inner>
                     <Inner>
                         <Box className="p1">
                             <img src={ny_terass2} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
+                        </Box>
+                    </Inner>
+                    <Inner>
+                        <Box className="p1">
+                            <img src={uppdrag6} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
                         </Box>
                     </Inner>
                     <Inner>
@@ -114,28 +149,18 @@ const Projects = () => {
                         </Box>
                     </Inner>
                     <Inner>
-                        <Box className="p4">
-                            <img src={uppdrag6} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
-                        </Box>
-                    </Inner>
-                    <Inner>
-                        <Box className="p5">
-                            <img src={brygga_ny} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
-                        </Box>
-                    </Inner>
-                    <Inner>
                         <Box className="p6">
                             <img src={uppdrag7} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
                         </Box>
                     </Inner>
                     <Inner>
-                        <Box className="p7">
-                            <img src={uppdrag8} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
+                        <Box className="p8">
+                            <img src={kök_ny} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
                         </Box>
                     </Inner>
                     <Inner>
-                        <Box className="p8">
-                            <img src={kök_ny} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
+                        <Box className="p5">
+                            <img src={brygga_ny} alt="terass" style={{justifySelf: "flexStart", width: "400px", height: "auto"}} />
                         </Box>
                     </Inner>
                 </Outer>
